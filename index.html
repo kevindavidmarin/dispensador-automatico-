@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispensador automático de comida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#investigacion">Investigación</a></li>
+            <li><a href="#diseno">Diseño</a></li>
+            <li><a href="#materiales">Materiales</a></li>
+            <li><a href="#construccion">Construcción</a></li>
+            <li><a href="#pruebas">Pruebas</a></li>
+            <li><a href="#resultado">Resultado</a></li>
+        </ul>
+    </nav>
+
+    <header id="inicio" class="encabezado">
+        <h1>Dispensador automático de comida</h1>
+        <h2>Kevin David Marín Medina</h2>
+        <p>Proyecto tecnológico para alimentar mascotas automáticamente</p>
+    </header>
+
+    <main>
+
+        <section class="seccion">
+            <h2>¿Para qué sirve?</h2>
+
+            <div class="caja">
+                <p>
+                    Un dispensador de comida para mascotas sirve para alimentar a perros y gatos
+                    de manera autónoma, entregando comida en horarios y cantidades determinadas.
+                    Es útil para mantener una alimentación organizada y evitar que las mascotas
+                    pasen mucho tiempo sin comer cuando su dueño no está en casa.
+                </p>
+
+                <p>
+                    También ayuda a controlar las proporciones y mantener una rutina diaria de
+                    alimentación, facilitando el cuidado de la mascota.
+                </p>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <h2>1. ¿Qué queremos construir?</h2>
+
+            <div class="caja">
+                <ul>
+                    <li>Queremos construir un dispensador automático de comida para mascotas.</li>
+                    <li>El dispositivo debe entregar alimento en horarios establecidos.</li>
+                    <li>También debe permitir controlar la cantidad de comida.</li>
+                </ul>
+
+                <h3>¿Por qué escogimos esta idea?</h3>
+
+                <p>
+                    Escogimos esta idea porque muchas personas pasan varias horas fuera de casa
+                    y no siempre pueden alimentar a sus mascotas a tiempo. Con este proyecto
+                    buscamos crear una solución sencilla, útil y económica.
+                </p>
+
+                <h3>¿Qué problema queremos solucionar?</h3>
+
+                <p>
+                    Queremos solucionar el problema de olvidar o retrasar la alimentación de las
+                    mascotas. El dispensador permitirá que reciban su comida de forma organizada,
+                    incluso cuando sus dueños no estén presentes.
+                </p>
+            </div>
+        </section>
+
+        <section id="investigacion" class="seccion">
+            <h2>2. ¿Qué investigamos?</h2>
+
+            <div class="caja">
+                <h3>¿Qué necesitamos aprender?</h3>
+
+                <ul>
+                    <li>Cómo funciona un dispensador automático.</li>
+                    <li>Cómo programar los horarios de alimentación.</li>
+                    <li>Cómo utilizar un motor para mover la comida.</li>
+                    <li>Cómo conectar los componentes electrónicos.</li>
+                    <li>Cómo construir una estructura resistente y segura.</li>
+                </ul>
+
+                <h3>¿Qué información encontramos?</h3>
+
+                <p>
+                    Encontramos que un dispensador automático puede utilizar un recipiente para
+                    almacenar la comida, un motor para liberar una porción y un sistema de control
+                    que activa el mecanismo en determinados horarios.
+                </p>
+
+                <h3>Fuentes consultadas</h3>
+
+                <ul>
+                    <li>Videos educativos sobre dispensadores automáticos.</li>
+                    <li>Páginas web sobre proyectos con Arduino.</li>
+                    <li>Información sobre motores y sensores.</li>
+                    <li>Apuntes de clase y explicaciones del profesor.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="diseno" class="seccion">
+            <h2>3. Nuestro diseño</h2>
+
+            <div class="diseno-boceto">
+
+                <div class="caja texto-boceto">
+                    <h3>Boceto inicial</h3>
+
+                    <p>
+                        Imaginamos un dispensador con un recipiente en la parte superior para
+                        guardar la comida. En la parte inferior estaría el mecanismo encargado de
+                        dejar salir el alimento hacia el plato de la mascota.
+                    </p>
+
+                    <h3>¿Cómo imaginamos el robot?</h3>
+
+                    <p>
+                        Lo imaginamos como una caja sencilla, estable y fácil de usar. Tendría un
+                        espacio para almacenar comida y un sistema automático que funcionaría por
+                        medio de un motor.
+                    </p>
+
+                    <h3>¿Qué queremos que haga?</h3>
+
+                    <p>
+                        Queremos que el dispensador entregue comida automáticamente en los horarios
+                        programados y que proporcione una cantidad adecuada para la mascota.
+                    </p>
+                </div>
+
+                <div class="imagen-boceto">
+                    <img src="boceto.jpg" alt="Boceto del dispensador automático">
+                </div>
+
+            </div>
+        </section>
+
+        <section id="materiales" class="seccion">
+            <h2>4. Materiales</h2>
+
+            <div class="caja">
+                <h3>Materiales necesarios</h3>
+
+                <ul>
+                    <li>Cartón, madera o material para construir la estructura.</li>
+                    <li>Recipiente para almacenar la comida.</li>
+                    <li>Plato para recibir el alimento.</li>
+                    <li>Cables de conexión.</li>
+                    <li>Fuente de energía o batería.</li>
+                </ul>
+
+                <h3>Componentes</h3>
+
+                <ul>
+                    <li>Arduino o tarjeta de control.</li>
+                    <li>Motor servo o motorreductor.</li>
+                    <li>Sensor o módulo de tiempo.</li>
+                    <li>Interruptor.</li>
+                    <li>Protoboard.</li>
+                </ul>
+
+                <h3>¿Para qué utilizaremos cada uno?</h3>
+
+                <p>
+                    La estructura servirá para sostener el dispensador. El recipiente almacenará
+                    la comida. El motor abrirá o moverá la compuerta para liberar el alimento.
+                    La tarjeta de control permitirá programar el funcionamiento del dispositivo.
+                    Los cables conectarán todos los componentes y la batería proporcionará energía.
+                </p>
+            </div>
+        </section>
+
+        <section id="construccion" class="seccion">
+            <h2>5. Construcción</h2>
+
+            <div class="caja">
+                <h3>¿Cómo comenzamos?</h3>
+
+                <p>
+                    Primero realizamos el diseño de la estructura y medimos el espacio necesario
+                    para guardar la comida. Después seleccionamos los materiales y organizamos
+                    los componentes electrónicos.
+                </p>
+
+                <h3>Pasos realizados</h3>
+
+                <ol>
+                    <li>Diseñamos la estructura del dispensador.</li>
+                    <li>Construimos el recipiente para almacenar la comida.</li>
+                    <li>Instalamos el motor y la compuerta.</li>
+                    <li>Conectamos los cables y la tarjeta de control.</li>
+                    <li>Programamos los horarios de alimentación.</li>
+                    <li>Unimos todas las partes del prototipo.</li>
+                </ol>
+
+                <h3>Fotografías del proceso</h3>
+
+                <p>
+                    En esta parte se pueden agregar fotografías de la construcción, la conexión
+                    de los componentes y las pruebas del dispensador.
+                </p>
+            </div>
+        </section>
+
+        <section id="pruebas" class="seccion">
+            <h2>6. Pruebas y cambios</h2>
+
+            <div class="caja">
+                <h3>¿Qué probamos?</h3>
+
+                <p>
+                    Probamos que el motor funcionara correctamente, que la compuerta pudiera liberar
+                    la comida y que la estructura soportara el peso del recipiente.
+                </p>
+
+                <h3>¿Qué funcionó?</h3>
+
+                <p>
+                    Funcionó el mecanismo de salida de comida y la estructura logró mantenerse
+                    estable durante las pruebas.
+                </p>
+
+                <h3>¿Qué problemas encontramos?</h3>
+
+                <ul>
+                    <li>La comida se atascaba algunas veces.</li>
+                    <li>El motor necesitaba una mejor sujeción.</li>
+                    <li>La cantidad de comida no siempre era igual.</li>
+                </ul>
+
+                <h3>¿Qué cambiamos?</h3>
+
+                <p>
+                    Cambiamos el tamaño de la abertura, reforzamos la estructura y ajustamos el
+                    movimiento del motor para que la comida saliera con mayor facilidad.
+                </p>
+            </div>
+        </section>
+
+        <section id="resultado" class="seccion">
+            <h2>7. Resultado</h2>
+
+            <div class="caja">
+                <p>
+                    Como resultado, construimos un prototipo de dispensador automático capaz de
+                    almacenar comida y liberarla mediante un mecanismo controlado.
+                </p>
+
+                <p>
+                    El proyecto nos permitió aprender sobre programación, electricidad, diseño y
+                    construcción. Aunque todavía puede mejorar, cumple con la función principal
+                    de ayudar a alimentar una mascota de manera automática.
+                </p>
+
+                <h3>Conclusión</h3>
+
+                <p>
+                    El dispensador automático es una solución práctica para mantener una rutina de
+                    alimentación. En el futuro se podrían agregar una pantalla, una cámara, una
+                    conexión al celular o un sensor que indique cuándo se está acabando la comida.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Proyecto escolar - Dispensador automático de comida</p>
+    </footer>
+
+</body>
+</html>

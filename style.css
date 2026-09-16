@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+
+    /* Fondo general de toda la página */
+    background-image: url("image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Menú negro */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 12px;
+    background: rgba(20, 20, 20, 0.92);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    padding: 10px 14px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #f2a900;
+    color: #111;
+}
+
+/* Parte superior con imagen parallax */
+
+.encabezado {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+
+    /* Esta es otra imagen opcional para la parte inicial */
+    background-image: url("imagen.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Títulos sin fondo blanco */
+
+.encabezado h1,
+.encabezado h2,
+.encabezado p {
+    margin: 8px;
+    padding: 12px 20px;
+    color: white;
+    background: transparent;
+    border: none;
+    text-shadow: 3px 3px 6px black;
+}
+
+.encabezado h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    text-transform: uppercase;
+}
+
+.encabezado h2 {
+    font-size: 1.6rem;
+}
+
+.encabezado p {
+    font-size: 1.1rem;
+}
+
+/* Parte principal: transparente para que se vea el fondo */
+
+main {
+    width: min(1100px, 92%);
+    margin: auto;
+    padding: 35px 0;
+    background: transparent;
+}
+
+.seccion {
+    margin: 45px 0;
+    padding: 0;
+    background: transparent;
+    scroll-margin-top: 80px;
+}
+
+/* Títulos de cada sección: negros, no blancos */
+
+.seccion > h2 {
+    display: table;
+    margin: 0 auto 22px;
+    padding: 12px 20px;
+    color: white;
+    background: rgba(25, 25, 25, 0.94);
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px black;
+}
+
+/*
+    ESTE ES EL ÚNICO LUGAR CON FONDO BLANCO.
+    Solo los textos dentro de <div class="caja"> estarán blancos detrás.
+*/
+
+.caja {
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.90);
+    border: 2px solid #222;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+.caja h3 {
+    margin-top: 20px;
+    color: #7b4b00;
+}
+
+.caja h3:first-child {
+    margin-top: 0;
+}
+
+.caja ul,
+.caja ol {
+    padding-left: 25px;
+}
+
+.caja li {
+    margin-bottom: 8px;
+}
+
+/* Sección de diseño: texto a la izquierda e imagen a la derecha */
+
+.diseno-boceto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: stretch;
+    background: transparent;
+}
+
+.texto-boceto {
+    height: 100%;
+}
+
+/* Sin fondo blanco detrás de boceto.jpg */
+
+.imagen-boceto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.imagen-boceto img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: contain;
+    border: 3px solid #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+}
+
+/* Pie de página negro */
+
+footer {
+    padding: 25px;
+    color: white;
+    text-align: center;
+    background: rgba(20, 20, 20, 0.92);
+    border-top: 2px solid white;
+}
+
+/* Para celulares */
+
+@media (max-width: 750px) {
+    nav ul {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 8px;
+    }
+
+    .encabezado {
+        min-height: 420px;
+    }
+
+    .seccion > h2 {
+        font-size: 1.15rem;
+    }
+
+    .caja {
+        padding: 18px;
+        font-size: 1rem;
+    }
+
+    .diseno-boceto {
+        grid-template-columns: 1fr;
+    }
+
+    .imagen-boceto {
+        order: 2;
+    }
+}
+
